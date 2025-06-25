@@ -15,10 +15,10 @@ import java.util.UUID;
 @RestController
 @CrossOrigin(origins = "*")
 public class DiagnoseHandleController {
-    private String endpoint = "http://oss-cn-beijing.aliyuncs.com";
-    private String accessKeyId = "LTAI5tCX7AQ4YJa5VSfACnBp";
-    private String accessKeySecret = "gmoxUAFX1V7IJThezIfwIkzQsyuWqT";
-    private String bucketName = "lung-analyse";
+    private String endpoint = "你的endpoint";
+    private String accessKeyId = "你的accessKey";
+    private String accessKeySecret = "你的accessKeySecret";
+    private String bucketName = "你的bucket名";
     public DiagnoseSendInfo dss = new DiagnoseSendInfo();
     @PostMapping("/send")
     public DiagnoseSendInfo sendDiagnoseImg(@RequestParam("filePath")String filePath) {
